@@ -13,4 +13,5 @@ The `main()` function inserts five values into the heap, prints the array repres
 
 ## (d) Sample Output
 Max-Heap array: 9 5 3 1 2 
+
 After deleting element 9: 5 2 3 1
