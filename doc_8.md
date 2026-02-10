@@ -12,4 +12,5 @@ The `main()` function generates 10 random numbers using `rand()`, stores them in
 
 ## (d) Sample Output
 Generated Random Numbers: 41 67 34 0 69 24 78 58 62 64 
+
 Sorted using Quick Sort: 0 24 34 41 58 62 64 67 69 78
