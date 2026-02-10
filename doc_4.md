@@ -8,9 +8,10 @@ A **Doubly Linked List** `struct Node` with `data`, a `next` pointer, and a `pre
 - `deleteNode()`: Removes a node by linking its predecessor and successor directly to each other.
 
 ## (c) main() Organization
-The `main()` function initializes the head, adds nodes to the list, prints the list, deletes a middle node, and prints the final list.
+The `main()` function initializes the head, adds nodes to the list, prints the list, deletes a middle node and prints the final list.
 
 ## (d) Sample Output
 Forward: 10 20 30 
-Deleting node with data 20...
+Deleting node with data 20..
+
 Forward: 10 30
