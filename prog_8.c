@@ -8,14 +8,14 @@ void swap(int* a, int* b) {
     *b = t;
 }
 
-// 1. Bubble Sort
+
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++)
         for (int j = 0; j < n - i - 1; j++)
             if (arr[j] > arr[j + 1]) swap(&arr[j], &arr[j + 1]);
 }
 
-// 2. Selection Sort
+
 void selectionSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         int min_idx = i;
@@ -25,7 +25,7 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-// 3. Insertion Sort
+
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i], j = i - 1;
@@ -37,7 +37,7 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-// 4. Quick Sort
+
 int partition(int arr[], int low, int high) {
     int pivot = arr[high], i = (low - 1);
     for (int j = low; j <= high - 1; j++) {
@@ -75,11 +75,12 @@ int main() {
     }
     printf("\n\n");
 
-    // Demonstrating Quick Sort (the most efficient of the four)
+    
     for(int i=0; i<n; i++) temp[i] = arr[i];
     quickSort(temp, 0, n - 1);
     printf("Sorted using Quick Sort: ");
     printArray(temp, n);
 
     return 0;
+
 }
