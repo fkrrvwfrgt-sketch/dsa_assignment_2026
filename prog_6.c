@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int size = 0;
 
 void swap(int *a, int *b) {
@@ -8,7 +7,6 @@ void swap(int *a, int *b) {
     *a = temp;
 }
 
-// Maintains the heap property after insertion or deletion
 void heapify(int array[], int size, int i) {
     if (size == 1) return;
 
@@ -16,12 +14,10 @@ void heapify(int array[], int size, int i) {
     int l = 2 * i + 1;
     int r = 2 * i + 2;
 
-    // For Min-Heap, change > to <
     if (l < size && array[l] > array[largest])
         largest = l;
     if (r < size && array[r] > array[largest])
         largest = r;
-
     if (largest != i) {
         swap(&array[i], &array[largest]);
         heapify(array, size, largest);
@@ -78,4 +74,5 @@ int main() {
     printArray(array, size);
 
     return 0;
+
 }
