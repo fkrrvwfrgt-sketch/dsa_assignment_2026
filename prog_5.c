@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #define MAX 10
 
-int adj[MAX][MAX]; // Adjacency Matrix
+int adj[MAX][MAX]; 
 int visited[MAX];
-int n; // Number of vertices
+int n; 
 
-// BFS uses a Queue
 void BFS(int start) {
     int queue[MAX], front = -1, rear = -1;
     for(int i = 0; i < n; i++) visited[i] = 0;
@@ -30,7 +28,6 @@ void BFS(int start) {
     printf("\n");
 }
 
-// DFS uses Recursion (which uses the System Stack)
 void DFS(int vertex) {
     visited[vertex] = 1;
     printf("%d ", vertex);
@@ -52,12 +49,12 @@ int main() {
     for(int i = 0; i < edges; i++) {
         printf("Enter edge (u v): ");
         scanf("%d %d", &u, &v);
-        adj[u][v] = adj[v][u] = 1; // For undirected graph
+        adj[u][v] = adj[v][u] = 1; 
     }
 
     BFS(0);
 
-    for(int i = 0; i < n; i++) visited[i] = 0; // Reset for DFS
+    for(int i = 0; i < n; i++) visited[i] = 0; 
     printf("DFS Traversal: ");
     DFS(0);
     printf("\n");
