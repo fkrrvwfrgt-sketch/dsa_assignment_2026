@@ -8,11 +8,11 @@ The program defines a `struct Stack` containing:
 ## (b) Function Descriptions
 - `push()`: Adds a character to the top of the stack.
 - `pop()`: Removes and returns the top character.
-- `isMatching()`: Returns true if two characters form a valid pair (e.g., '{' and '}').
+- `isMatching()`: Returns true if two characters form a valid pair (eg:, '{' and '}').
 - `checkBalanced()`: Iterates through the string, pushing openers and popping for closers to check for symmetry.
 
 ## (c) main() Organization
-The `main()` function initializes several test strings, passes them to the `checkBalanced` function, and prints the result to the console.
+The `main()` function initializes several test strings, passes them to the `checkBalanced` function and prints the result to the console.
 
 ## (d) Sample Output
 Expression: a + (b - c) * (d -> Not Balanced
