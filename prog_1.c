@@ -45,4 +45,5 @@ int main() {
         printf("Expression: %s -> %s\n", tests[i], checkBalanced(tests[i]) ? "Balanced" : "Not Balanced");
     }
     return 0;
+
 }
